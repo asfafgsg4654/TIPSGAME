@@ -38,11 +38,30 @@
             75% { transform: translateX(-5px); }
             100% { transform: translateX(0); }
         }
+        .running-text {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            width: 100%;
+            position: relative;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .running-text h2 {
+            display: inline;
+            margin: 0;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
-<h2>Tabel RTP Game</h2>
+<div class="running-text"><h2>Bocoran Tips Game Hari Ini</h2></div>
 
 <table>
     <thead>
